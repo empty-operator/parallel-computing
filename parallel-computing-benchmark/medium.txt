@@ -1,0 +1,687 @@
+# JMH version: 1.36
+# VM version: JDK 19.0.2, OpenJDK 64-Bit Server VM, 19.0.2+7-44
+# VM invoker: C:\Users\Roman_Leniv\.jabba\jdk\system@19\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.leniv.parallel.computing.benchmark.FinderBenchmark.find
+# Parameters: (input = NORMAL, type = SEQUENTIAL)
+
+# Run progress: 0,00% complete, ETA 00:33:20
+# Fork: 1 of 5
+# Warmup Iteration   1: 15,415 ms/op
+# Warmup Iteration   2: 15,169 ms/op
+# Warmup Iteration   3: 15,110 ms/op
+# Warmup Iteration   4: 15,314 ms/op
+# Warmup Iteration   5: 14,942 ms/op
+Iteration   1: 14,789 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 14,767 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 15,031 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 14,856 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 14,924 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 5,00% complete, ETA 00:31:49
+# Fork: 2 of 5
+# Warmup Iteration   1: 15,149 ms/op
+# Warmup Iteration   2: 14,814 ms/op
+# Warmup Iteration   3: 14,738 ms/op
+# Warmup Iteration   4: 14,698 ms/op
+# Warmup Iteration   5: 14,961 ms/op
+Iteration   1: 15,575 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 15,128 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 14,872 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 14,897 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 14,989 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 10,00% complete, ETA 00:30:08
+# Fork: 3 of 5
+# Warmup Iteration   1: 14,992 ms/op
+# Warmup Iteration   2: 14,514 ms/op
+# Warmup Iteration   3: 14,590 ms/op
+# Warmup Iteration   4: 14,602 ms/op
+# Warmup Iteration   5: 14,507 ms/op
+Iteration   1: 14,480 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 14,495 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 14,544 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 14,581 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 14,669 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 15,00% complete, ETA 00:28:28
+# Fork: 4 of 5
+# Warmup Iteration   1: 15,171 ms/op
+# Warmup Iteration   2: 14,830 ms/op
+# Warmup Iteration   3: 14,838 ms/op
+# Warmup Iteration   4: 14,868 ms/op
+# Warmup Iteration   5: 14,951 ms/op
+Iteration   1: 14,764 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 14,806 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 14,778 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 14,763 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 14,779 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 20,00% complete, ETA 00:26:47
+# Fork: 5 of 5
+# Warmup Iteration   1: 14,984 ms/op
+# Warmup Iteration   2: 14,656 ms/op
+# Warmup Iteration   3: 14,710 ms/op
+# Warmup Iteration   4: 14,745 ms/op
+# Warmup Iteration   5: 14,716 ms/op
+Iteration   1: 14,729 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 14,771 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 14,705 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 14,694 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 14,719 ms/op
+                 ·stack: <delayed till summary>
+
+
+
+Result "org.leniv.parallel.computing.benchmark.FinderBenchmark.find":
+  14,804 ±(99.9%) 0,167 ms/op [Average]
+  (min, avg, max) = (14,480, 14,804, 15,575), stdev = 0,223
+  CI (99.9%): [14,637, 14,971] (assumes normal distribution)
+
+Secondary result "org.leniv.parallel.computing.benchmark.FinderBenchmark.find:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 66,7%         RUNNABLE
+ 33,3%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 33,3%  50,0% <stack is empty, everything is filtered?>
+ 22,3%  33,5% java.util.stream.Collectors.lambda$groupingBy$53:1143
+ 10,4%  15,5% java.util.HashMap.hash:338
+  0,2%   0,3% java.util.HashMap.resize:713
+  0,1%   0,2% java.lang.invoke.DirectMethodHandle.allocateInstance:501
+  0,1%   0,2% java.util.HashMap$EntrySpliterator.forEachRemaining:1861
+  0,1%   0,1% java.util.HashMap.replaceAll:1444
+  0,1%   0,1% java.util.HashMap.resize:741
+  0,0%   0,1% java.util.HashMap.computeIfAbsent:1219
+  0,0%   0,0% java.util.HashMap.replaceAll:1443
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 33,3% 100,0% jdk.internal.misc.Unsafe.park:-2
+
+
+
+# JMH version: 1.36
+# VM version: JDK 19.0.2, OpenJDK 64-Bit Server VM, 19.0.2+7-44
+# VM invoker: C:\Users\Roman_Leniv\.jabba\jdk\system@19\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.leniv.parallel.computing.benchmark.FinderBenchmark.find
+# Parameters: (input = NORMAL, type = SIMPLE_PARALLEL)
+
+# Run progress: 25,00% complete, ETA 00:25:07
+# Fork: 1 of 5
+# Warmup Iteration   1: 12,698 ms/op
+# Warmup Iteration   2: 12,017 ms/op
+# Warmup Iteration   3: 11,801 ms/op
+# Warmup Iteration   4: 11,958 ms/op
+# Warmup Iteration   5: 12,103 ms/op
+Iteration   1: 11,806 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 11,849 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 11,988 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 12,758 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 11,932 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 30,00% complete, ETA 00:23:27
+# Fork: 2 of 5
+# Warmup Iteration   1: 13,775 ms/op
+# Warmup Iteration   2: 12,872 ms/op
+# Warmup Iteration   3: 12,125 ms/op
+# Warmup Iteration   4: 12,271 ms/op
+# Warmup Iteration   5: 12,501 ms/op
+Iteration   1: 12,183 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 12,217 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 11,879 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 12,810 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 12,856 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 35,00% complete, ETA 00:21:46
+# Fork: 3 of 5
+# Warmup Iteration   1: 13,371 ms/op
+# Warmup Iteration   2: 12,128 ms/op
+# Warmup Iteration   3: 12,343 ms/op
+# Warmup Iteration   4: 12,333 ms/op
+# Warmup Iteration   5: 12,214 ms/op
+Iteration   1: 12,217 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 12,063 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 12,086 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 12,040 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 12,499 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 40,00% complete, ETA 00:20:06
+# Fork: 4 of 5
+# Warmup Iteration   1: 14,526 ms/op
+# Warmup Iteration   2: 12,918 ms/op
+# Warmup Iteration   3: 12,145 ms/op
+# Warmup Iteration   4: 12,179 ms/op
+# Warmup Iteration   5: 12,280 ms/op
+Iteration   1: 12,343 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 12,232 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 12,312 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 12,109 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 12,348 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 45,00% complete, ETA 00:18:25
+# Fork: 5 of 5
+# Warmup Iteration   1: 13,540 ms/op
+# Warmup Iteration   2: 12,668 ms/op
+# Warmup Iteration   3: 12,196 ms/op
+# Warmup Iteration   4: 12,458 ms/op
+# Warmup Iteration   5: 12,302 ms/op
+Iteration   1: 12,347 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 12,232 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 12,529 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 12,482 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 12,274 ms/op
+                 ·stack: <delayed till summary>
+
+
+
+Result "org.leniv.parallel.computing.benchmark.FinderBenchmark.find":
+  12,256 ±(99.9%) 0,214 ms/op [Average]
+  (min, avg, max) = (11,806, 12,256, 12,856), stdev = 0,286
+  CI (99.9%): [12,041, 12,470] (assumes normal distribution)
+
+Secondary result "org.leniv.parallel.computing.benchmark.FinderBenchmark.find:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 55,0%         RUNNABLE
+ 38,8%         WAITING
+  5,3%         TIMED_WAITING
+  0,9%         BLOCKED
+
+....[Thread state: RUNNABLE]........................................................................
+ 38,0%  69,0% org.leniv.parallel.computing.element.finder.impl.problem.ComputeEachElementFrequencyProblem.solve:25
+  5,3%   9,6% <stack is empty, everything is filtered?>
+  4,6%   8,3% java.util.concurrent.ConcurrentHashMap.merge:2051
+  1,4%   2,5% java.util.concurrent.ConcurrentHashMap.merge:2047
+  1,2%   2,1% java.util.concurrent.ConcurrentHashMap.transfer:2556
+  0,8%   1,5% java.util.concurrent.ConcurrentHashMap.addCount:2331
+  0,5%   0,8% java.util.concurrent.ConcurrentHashMap.merge:2112
+  0,4%   0,8% java.util.concurrent.ConcurrentHashMap.merge:2038
+  0,4%   0,8% java.util.ArrayList.<init>:186
+  0,3%   0,6% java.util.concurrent.ConcurrentHashMap.transfer:2489
+  2,3%   4,1% <other>
+
+....[Thread state: WAITING].........................................................................
+ 38,8% 100,0% jdk.internal.misc.Unsafe.park:-2
+
+....[Thread state: TIMED_WAITING]...................................................................
+  5,3% 100,0% jdk.internal.misc.Unsafe.park:-2
+
+....[Thread state: BLOCKED].........................................................................
+  0,9%  95,3% java.util.concurrent.ConcurrentHashMap.merge:2047
+  0,0%   4,7% java.util.concurrent.ConcurrentHashMap.transfer:2483
+
+
+
+# JMH version: 1.36
+# VM version: JDK 19.0.2, OpenJDK 64-Bit Server VM, 19.0.2+7-44
+# VM invoker: C:\Users\Roman_Leniv\.jabba\jdk\system@19\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.leniv.parallel.computing.benchmark.FinderBenchmark.find
+# Parameters: (input = NORMAL, type = RECURSIVE_PARALLEL)
+
+# Run progress: 50,00% complete, ETA 00:16:45
+# Fork: 1 of 5
+# Warmup Iteration   1: 15,071 ms/op
+# Warmup Iteration   2: 13,962 ms/op
+# Warmup Iteration   3: 13,904 ms/op
+# Warmup Iteration   4: 13,888 ms/op
+# Warmup Iteration   5: 13,864 ms/op
+Iteration   1: 14,033 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 13,894 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 14,215 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 14,105 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 14,326 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 55,00% complete, ETA 00:15:04
+# Fork: 2 of 5
+# Warmup Iteration   1: 15,274 ms/op
+# Warmup Iteration   2: 14,207 ms/op
+# Warmup Iteration   3: 14,145 ms/op
+# Warmup Iteration   4: 13,938 ms/op
+# Warmup Iteration   5: 14,264 ms/op
+Iteration   1: 13,942 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 13,833 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 14,028 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 14,124 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 14,287 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 60,00% complete, ETA 00:13:24
+# Fork: 3 of 5
+# Warmup Iteration   1: 14,896 ms/op
+# Warmup Iteration   2: 14,033 ms/op
+# Warmup Iteration   3: 14,425 ms/op
+# Warmup Iteration   4: 13,900 ms/op
+# Warmup Iteration   5: 13,954 ms/op
+Iteration   1: 14,051 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 14,372 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 14,379 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 13,920 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 14,690 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 65,00% complete, ETA 00:11:43
+# Fork: 4 of 5
+# Warmup Iteration   1: 15,069 ms/op
+# Warmup Iteration   2: 14,139 ms/op
+# Warmup Iteration   3: 14,299 ms/op
+# Warmup Iteration   4: 14,313 ms/op
+# Warmup Iteration   5: 14,466 ms/op
+Iteration   1: 15,090 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 14,600 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 14,317 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 14,217 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 14,287 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 70,00% complete, ETA 00:10:03
+# Fork: 5 of 5
+# Warmup Iteration   1: 15,199 ms/op
+# Warmup Iteration   2: 14,821 ms/op
+# Warmup Iteration   3: 14,059 ms/op
+# Warmup Iteration   4: 14,229 ms/op
+# Warmup Iteration   5: 14,485 ms/op
+Iteration   1: 14,584 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 14,453 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 14,550 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 14,608 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 14,434 ms/op
+                 ·stack: <delayed till summary>
+
+
+
+Result "org.leniv.parallel.computing.benchmark.FinderBenchmark.find":
+  14,294 ±(99.9%) 0,222 ms/op [Average]
+  (min, avg, max) = (13,833, 14,294, 15,090), stdev = 0,296
+  CI (99.9%): [14,072, 14,515] (assumes normal distribution)
+
+Secondary result "org.leniv.parallel.computing.benchmark.FinderBenchmark.find:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 57,8%         RUNNABLE
+ 33,0%         WAITING
+  8,6%         TIMED_WAITING
+  0,7%         BLOCKED
+
+....[Thread state: RUNNABLE]........................................................................
+ 40,5%  70,0% org.leniv.parallel.computing.element.finder.impl.problem.ComputeEachElementFrequencyProblem.solve:25
+  5,6%   9,6% <stack is empty, everything is filtered?>
+  4,7%   8,1% java.util.concurrent.ConcurrentHashMap.merge:2051
+  1,1%   2,0% java.util.concurrent.ConcurrentHashMap.merge:2047
+  0,8%   1,3% java.util.concurrent.ConcurrentHashMap.merge:2038
+  0,7%   1,3% java.util.concurrent.ConcurrentHashMap.transfer:2556
+  0,6%   1,1% java.util.concurrent.ConcurrentHashMap.merge:2112
+  0,4%   0,7% java.util.concurrent.ConcurrentHashMap.addCount:2331
+  0,4%   0,7% java.util.ArrayList.<init>:186
+  0,3%   0,6% java.util.Arrays.copyOf:3512
+  2,7%   4,7% <other>
+
+....[Thread state: WAITING].........................................................................
+ 33,0% 100,0% jdk.internal.misc.Unsafe.park:-2
+
+....[Thread state: TIMED_WAITING]...................................................................
+  8,6% 100,0% jdk.internal.misc.Unsafe.park:-2
+
+....[Thread state: BLOCKED].........................................................................
+  0,6%  94,4% java.util.concurrent.ConcurrentHashMap.merge:2047
+  0,0%   5,5% java.util.concurrent.ConcurrentHashMap.transfer:2483
+  0,0%   0,1% java.util.concurrent.ConcurrentHashMap.transfer:2484
+
+
+
+# JMH version: 1.36
+# VM version: JDK 19.0.2, OpenJDK 64-Bit Server VM, 19.0.2+7-44
+# VM invoker: C:\Users\Roman_Leniv\.jabba\jdk\system@19\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.leniv.parallel.computing.benchmark.FinderBenchmark.find
+# Parameters: (input = NORMAL, type = STREAM_PARALLEL)
+
+# Run progress: 75,00% complete, ETA 00:08:22
+# Fork: 1 of 5
+# Warmup Iteration   1: 6,853 ms/op
+# Warmup Iteration   2: 6,624 ms/op
+# Warmup Iteration   3: 6,541 ms/op
+# Warmup Iteration   4: 6,537 ms/op
+# Warmup Iteration   5: 6,562 ms/op
+Iteration   1: 6,750 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 6,551 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 6,549 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 6,564 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 6,595 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 80,00% complete, ETA 00:06:42
+# Fork: 2 of 5
+# Warmup Iteration   1: 6,841 ms/op
+# Warmup Iteration   2: 6,583 ms/op
+# Warmup Iteration   3: 6,588 ms/op
+# Warmup Iteration   4: 6,500 ms/op
+# Warmup Iteration   5: 6,534 ms/op
+Iteration   1: 6,557 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 6,523 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 6,705 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 6,504 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 6,555 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 85,00% complete, ETA 00:05:01
+# Fork: 3 of 5
+# Warmup Iteration   1: 6,884 ms/op
+# Warmup Iteration   2: 6,697 ms/op
+# Warmup Iteration   3: 6,596 ms/op
+# Warmup Iteration   4: 6,568 ms/op
+# Warmup Iteration   5: 6,537 ms/op
+Iteration   1: 6,550 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 6,555 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 6,569 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 6,628 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 6,649 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 90,00% complete, ETA 00:03:21
+# Fork: 4 of 5
+# Warmup Iteration   1: 6,742 ms/op
+# Warmup Iteration   2: 6,579 ms/op
+# Warmup Iteration   3: 6,533 ms/op
+# Warmup Iteration   4: 6,498 ms/op
+# Warmup Iteration   5: 6,468 ms/op
+Iteration   1: 6,520 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 6,535 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 6,528 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 6,546 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 6,570 ms/op
+                 ·stack: <delayed till summary>
+
+
+# Run progress: 95,00% complete, ETA 00:01:40
+# Fork: 5 of 5
+# Warmup Iteration   1: 6,762 ms/op
+# Warmup Iteration   2: 6,572 ms/op
+# Warmup Iteration   3: 6,569 ms/op
+# Warmup Iteration   4: 6,585 ms/op
+# Warmup Iteration   5: 6,578 ms/op
+Iteration   1: 6,580 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   2: 6,529 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   3: 6,514 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   4: 6,524 ms/op
+                 ·stack: <delayed till summary>
+
+Iteration   5: 6,534 ms/op
+                 ·stack: <delayed till summary>
+
+
+
+Result "org.leniv.parallel.computing.benchmark.FinderBenchmark.find":
+  6,567 ±(99.9%) 0,044 ms/op [Average]
+  (min, avg, max) = (6,504, 6,567, 6,750), stdev = 0,059
+  CI (99.9%): [6,523, 6,612] (assumes normal distribution)
+
+Secondary result "org.leniv.parallel.computing.benchmark.FinderBenchmark.find:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 71,5%         RUNNABLE
+ 21,7%         WAITING
+  6,0%         TIMED_WAITING
+  0,8%         BLOCKED
+
+....[Thread state: RUNNABLE]........................................................................
+ 48,6%  68,0% java.util.stream.Collectors.lambda$groupingByConcurrent$59:1313
+ 13,1%  18,4% java.util.concurrent.ConcurrentHashMap.computeIfAbsent:1730
+  5,6%   7,8% <stack is empty, everything is filtered?>
+  1,1%   1,6% java.util.stream.Collectors.lambda$groupingByConcurrent$59:1314
+  0,5%   0,8% java.util.concurrent.ForkJoinPool.awaitWork:1879
+  0,4%   0,6% java.util.concurrent.ConcurrentHashMap.replaceAll:1619
+  0,3%   0,4% java.util.concurrent.ConcurrentHashMap.computeIfAbsent:1776
+  0,3%   0,4% java.util.concurrent.ConcurrentHashMap.transfer:2556
+  0,2%   0,3% java.lang.invoke.DirectMethodHandle.allocateInstance:501
+  0,2%   0,3% java.util.concurrent.ConcurrentHashMap.computeIfAbsent:1726
+  1,2%   1,6% <other>
+
+....[Thread state: WAITING].........................................................................
+ 21,7% 100,0% jdk.internal.misc.Unsafe.park:-2
+
+....[Thread state: TIMED_WAITING]...................................................................
+  6,0% 100,0% jdk.internal.misc.Unsafe.park:-2
+
+....[Thread state: BLOCKED].........................................................................
+  0,5%  66,9% java.util.stream.Collectors.lambda$groupingByConcurrent$59:1314
+  0,3%  32,8% java.util.concurrent.ConcurrentHashMap.computeIfAbsent:1726
+  0,0%   0,3% java.util.concurrent.ConcurrentHashMap.transfer:2483
+
+
+
+# Run complete. Total time: 00:33:30
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                    (input)              (type)  Mode  Cnt   Score   Error  Units
+FinderBenchmark.find          NORMAL          SEQUENTIAL  avgt   25  14,804 ± 0,167  ms/op
+FinderBenchmark.find:·stack   NORMAL          SEQUENTIAL  avgt          NaN            ---
+FinderBenchmark.find          NORMAL     SIMPLE_PARALLEL  avgt   25  12,256 ± 0,214  ms/op
+FinderBenchmark.find:·stack   NORMAL     SIMPLE_PARALLEL  avgt          NaN            ---
+FinderBenchmark.find          NORMAL  RECURSIVE_PARALLEL  avgt   25  14,294 ± 0,222  ms/op
+FinderBenchmark.find:·stack   NORMAL  RECURSIVE_PARALLEL  avgt          NaN            ---
+FinderBenchmark.find          NORMAL     STREAM_PARALLEL  avgt   25   6,567 ± 0,044  ms/op
+FinderBenchmark.find:·stack   NORMAL     STREAM_PARALLEL  avgt          NaN            ---
